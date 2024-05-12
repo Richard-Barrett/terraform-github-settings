@@ -81,12 +81,6 @@ variable "enterprise_id" {
   default     = ""
 }
 
-variable "enterprise_billing_email" {
-  description = "Email for the enterprise billing"
-  type        = string
-  default     = ""
-}
-
 variable "has_organization_projects" {
   description = "Whether the organization has projects"
   type        = bool
