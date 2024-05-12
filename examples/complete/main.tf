@@ -16,6 +16,7 @@ module "github_organization" {
   create        = false
   settings_only = true
 
+  advanced_security_enabled_for_new_repositories = false
   billing_email = "billing@example.com"
   organization_name = "myorgname"
 }
