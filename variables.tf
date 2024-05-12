@@ -158,18 +158,6 @@ variable "organization_name" {
   type        = string
 }
 
-variable "secret_scanning_push_protection_enabled_for_new_repositories" {
-  description = "Whether secret scanning push protection is enabled for new repositories"
-  type        = bool
-  default     = false
-}
-
-variable "secret_scanning_enabled_for_new_repositories" {
-  description = "Whether secret scanning is enabled for new repositories"
-  type        = bool
-  default     = false
-}
-
 variable "settings_only" {
   description = "Whether to only manage the settings of an existing organization"
   type        = bool
