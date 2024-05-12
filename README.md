@@ -32,12 +32,14 @@ To manage the settings of an existing organization with minimal required inputs,
 
 ```hcl
 module "github_organization" {
-  source = "./modules/github_organization"  # Update this with the path to the module
+  source  = "https://github.com/Richard-Barrett/terraform-github-settings"
+  version = "0.0.1"
 
-  create = false
+  create        = false
   settings_only = true
 
   billing_email = "billing@example.com"
+  organization_name = "myorgname"
 }
 ```
 
@@ -49,7 +51,8 @@ You can use this module to both create and/or manage and organization. This incl
 
 ```hcl
 module "github_organization" {
-  source = "./modules/github_organization"  # Update this with the path to the module
+  source  = "https://github.com/Richard-Barrett/terraform-github-settings"
+  version = "0.0.1"
 
   create = true
   settings_only = false
@@ -94,7 +97,8 @@ An Example just to manage the settings for a pre-existing organization. To manag
 
 ```hcl
 module "github_organization" {
-  source = "./modules/github_organization"  # Update this with the path to the module
+  source  = "https://github.com/Richard-Barrett/terraform-github-settings"
+  version = "0.0.1"
 
   create = false
   settings_only = true
@@ -141,7 +145,8 @@ Here is an example with all of the options defined on this module:
 
 ```hcl
 module "github_organization" {
-  source = "./modules/github_organization"  # Update this with the path to the module
+  source  = "https://github.com/Richard-Barrett/terraform-github-settings"
+  version = "0.0.1"
 
   create = false
   settings_only = true
